@@ -51,6 +51,12 @@ func BenchmarkTempGoPSUtil(b *testing.B) {
 	b.Logf("GoSysInfo errors: %d", serrs)
 }
 
+func BenchmarkTempNEW_ZELCH(b *testing.B) {
+	for n := 0; n < b.N; n++ {
+		// your's here
+	}
+}
+
 func getTempsGoPSUtil() {
 	sensors, err := host.SensorsTemperatures()
 	if err != nil {
